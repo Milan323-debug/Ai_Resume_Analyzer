@@ -9,24 +9,24 @@ export const resumes: Resume[] = [
       overallScore: 85,
       ATS: {
         score: 90,
-        tips: [],
+        tips: []
       },
       toneAndStyle: {
         score: 90,
-        tips: [],
+        tips: []
       },
       content: {
         score: 90,
-        tips: [],
+        tips: []
       },
       structure: {
         score: 90,
-        tips: [],
+        tips: []
       },
       skills: {
         score: 90,
-        tips: [],
-      },
+        tips: []
+      }
     },
   },
   {
@@ -39,24 +39,24 @@ export const resumes: Resume[] = [
       overallScore: 55,
       ATS: {
         score: 90,
-        tips: [],
+        tips: []
       },
       toneAndStyle: {
         score: 90,
-        tips: [],
+        tips: []
       },
       content: {
         score: 90,
-        tips: [],
+        tips: []
       },
       structure: {
         score: 90,
-        tips: [],
+        tips: []
       },
       skills: {
         score: 90,
-        tips: [],
-      },
+        tips: []
+      }
     },
   },
   {
@@ -69,24 +69,24 @@ export const resumes: Resume[] = [
       overallScore: 75,
       ATS: {
         score: 90,
-        tips: [],
+        tips: []
       },
       toneAndStyle: {
         score: 90,
-        tips: [],
+        tips: []
       },
       content: {
         score: 90,
-        tips: [],
+        tips: []
       },
       structure: {
         score: 90,
-        tips: [],
+        tips: []
       },
       skills: {
         score: 90,
-        tips: [],
-      },
+        tips: []
+      }
     },
   },
   {
@@ -99,24 +99,24 @@ export const resumes: Resume[] = [
       overallScore: 85,
       ATS: {
         score: 90,
-        tips: [],
+        tips: []
       },
       toneAndStyle: {
         score: 90,
-        tips: [],
+        tips: []
       },
       content: {
         score: 90,
-        tips: [],
+        tips: []
       },
       structure: {
         score: 90,
-        tips: [],
+        tips: []
       },
       skills: {
         score: 90,
-        tips: [],
-      },
+        tips: []
+      }
     },
   },
   {
@@ -129,24 +129,24 @@ export const resumes: Resume[] = [
       overallScore: 85,
       ATS: {
         score: 90,
-        tips: [],
+        tips: []
       },
       toneAndStyle: {
         score: 90,
-        tips: [],
+        tips: []
       },
       content: {
         score: 90,
-        tips: [],
+        tips: []
       },
       structure: {
         score: 90,
-        tips: [],
+        tips: []
       },
       skills: {
         score: 90,
-        tips: [],
-      },
+        tips: []
+      }
     },
   },
   {
@@ -159,71 +159,81 @@ export const resumes: Resume[] = [
       overallScore: 85,
       ATS: {
         score: 90,
-        tips: [],
+        tips: []
       },
       toneAndStyle: {
         score: 90,
-        tips: [],
+        tips: []
       },
       content: {
         score: 90,
-        tips: [],
+        tips: []
       },
       structure: {
         score: 90,
-        tips: [],
+        tips: []
       },
       skills: {
         score: 90,
-        tips: [],
-      },
+        tips: []
+      }
     },
   },
 ];
 
-export const AIResponseFormat = `
-      interface Feedback {
-      overallScore: number; //max 100
-      ATS: {
-        score: number; //rate based on ATS suitability
-        tips: {
-          type: "good" | "improve";
-          tip: string; //give 3-4 tips
-        }[];
-      };
-      toneAndStyle: {
-        score: number; //max 100
-        tips: {
-          type: "good" | "improve";
-          tip: string; //make it a short "title" for the actual explanation
-          explanation: string; //explain in detail here
-        }[]; //give 3-4 tips
-      };
-      content: {
-        score: number; //max 100
-        tips: {
-          type: "good" | "improve";
-          tip: string; //make it a short "title" for the actual explanation
-          explanation: string; //explain in detail here
-        }[]; //give 3-4 tips
-      };
-      structure: {
-        score: number; //max 100
-        tips: {
-          type: "good" | "improve";
-          tip: string; //make it a short "title" for the actual explanation
-          explanation: string; //explain in detail here
-        }[]; //give 3-4 tips
-      };
-      skills: {
-        score: number; //max 100
-        tips: {
-          type: "good" | "improve";
-          tip: string; //make it a short "title" for the actual explanation
-          explanation: string; //explain in detail here
-        }[]; //give 3-4 tips
-      };
-    }`;
+export const AIResponseFormat = `{
+  "overallScore": 75,
+  "ATS": {
+    "score": 0,
+    "tips": [
+      {
+        "type": "good|improve",
+        "tip": "string",
+        "explanation": "string"
+      }
+    ]
+  },
+  "toneAndStyle": {
+    "score": 0,
+    "tips": [
+      {
+        "type": "good|improve",
+        "tip": "string",
+        "explanation": "string"
+      }
+    ]
+  },
+  "content": {
+    "score": 0,
+    "tips": [
+      {
+        "type": "good|improve",
+        "tip": "string",
+        "explanation": "string"
+      }
+    ]
+  },
+  "structure": {
+    "score": 0,
+    "tips": [
+      {
+        "type": "good|improve",
+        "tip": "string",
+        "explanation": "string"
+      }
+    ]
+  },
+  "skills": {
+    "score": 0,
+    "tips": [
+      {
+        "type": "good|improve",
+        "tip": "string",
+        "explanation": "string"
+      }
+    ]
+  }
+}`;
 
 export const prepareInstructions = ({
   jobTitle,
@@ -236,13 +246,37 @@ export const prepareInstructions = ({
 }) =>
   `You are an expert in ATS (Applicant Tracking System) and resume analysis.
   Please analyze and rate this resume and suggest how to improve it.
-  The rating can be low if the resume is bad.
-  Be thorough and detailed. Don't be afraid to point out any mistakes or areas for improvement.
-  If there is a lot to improve, don't hesitate to give low scores. This is to help the user to improve their resume.
-  If available, use the job description for the job user is applying to to give more detailed feedback.
-  If provided, take the job description into consideration.
+
+  Scoring Guidelines:
+  - All scores should be on a scale of 0-100
+  - 90-100: Excellent, nearly perfect
+  - 80-89: Very good, minor improvements needed
+  - 70-79: Good, but has several areas for improvement
+  - 60-69: Fair, needs significant improvement
+  - Below 60: Poor, major revisions needed
+
+  ATS Score specifically should be based on:
+  - Proper keyword matching with job description (30%)
+  - Clear section headings and structure (20%)
+  - Proper formatting and parsing (20%)
+  - Use of standard section titles (15%)
+  - Absence of complex formatting/tables/images (15%)
+
+  Overall Score should be weighted average of:
+  - ATS Score (35%)
+  - Content Quality (25%)
+  - Skills Match (20%)
+  - Structure (10%)
+  - Tone and Style (10%)
+
+  For each category:
+  1. Assign a score based on the guidelines above
+  2. Provide 2-3 positive points (type: "good")
+  3. Provide 2-4 improvement suggestions (type: "improve")
+  4. Each improvement suggestion must include a detailed explanation
+
   The job title is: ${jobTitle}
   The job description is: ${jobDescription}
-  Provide the feedback using the following format: ${AIResponseFormat}
-  Return the analysis as a JSON object, without any other text and without the backticks.
-  Do not include any other text or comments.`;
+
+  Return ONLY a JSON object in exactly this format, with no additional text: ${AIResponseFormat}
+  `;

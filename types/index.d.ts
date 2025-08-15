@@ -21,6 +21,7 @@ interface Feedback {
     tips: {
       type: "good" | "improve";
       tip: string;
+      explanation?: string;
     }[];
   };
   toneAndStyle: {
@@ -28,7 +29,7 @@ interface Feedback {
     tips: {
       type: "good" | "improve";
       tip: string;
-      explanation: string;
+      explanation?: string;
     }[];
   };
   content: {
@@ -36,7 +37,7 @@ interface Feedback {
     tips: {
       type: "good" | "improve";
       tip: string;
-      explanation: string;
+      explanation?: string;
     }[];
   };
   structure: {
@@ -44,7 +45,7 @@ interface Feedback {
     tips: {
       type: "good" | "improve";
       tip: string;
-      explanation: string;
+      explanation?: string;
     }[];
   };
   skills: {
@@ -52,7 +53,7 @@ interface Feedback {
     tips: {
       type: "good" | "improve";
       tip: string;
-      explanation: string;
+      explanation?: string;
     }[];
   };
-}
+};

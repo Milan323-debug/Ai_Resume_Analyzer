@@ -1,5 +1,5 @@
-import { prepareInstructions } from 'constants';
-import React, { useState, type FormEvent } from 'react'
+import { prepareInstructions, AIResponseFormat } from '../../constants';
+import { useState, type FormEvent } from 'react'
 import { useNavigate } from 'react-router';
 import FileUploader from '~/components/FileUploader';
 import Navbar from '~/components/Navbar'
@@ -61,7 +61,7 @@ const upload = () => {
       setStatusText('Generating feedback...');
       const feedback = await ai.feedback(
         uploadFile.path,
-        prepareInstructions({ jobTitle, jobDescription })
+        prepareInstructions({ jobTitle, jobDescription, AIResponseFormat })
       )
 
       if (!feedback) {
@@ -76,6 +76,7 @@ const upload = () => {
 
       setStatusText('Feedback generated successfully!');
       console.log('Feedback Data:', data);
+      navigate(`/resume/${uuid}`);
   }
 
     const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
