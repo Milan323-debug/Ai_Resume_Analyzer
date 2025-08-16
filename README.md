@@ -29,10 +29,7 @@ A modern, production-ready template for building full-stack React applications u
       <sub>Resume Upload Screen</sub>
     </td>
     <td align="center">
-      <img
-        src="https://github.com/user-attachments/assets/e8671c01-294d-4f7f-a382-20b810a47da8"
-        alt="Resume analyzer Screen"
-        width="200" />
+      <img width="1903" height="922" alt="Screenshot 2025-08-16 152200" src="https://github.com/user-attachments/assets/e8671c01-294d-4f7f-a382-20b810a47da8" />
       <br />
       <sub>Resume analyzer Screen</sub>
     </td>
