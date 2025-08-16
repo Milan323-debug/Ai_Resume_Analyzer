@@ -20,24 +20,24 @@ A modern, production-ready template for building full-stack React applications u
   <tr>
     <td>
       <img
-        src="https://github.com/user-attachments/assets/2cc845ca-4196-410d-b23f-b799a3c8c0e7"
-        alt="Video Picker Screen"
+        src="https://github.com/user-attachments/assets/df16b139-3b9d-48e9-a500-36417bb93c42 />"
+        alt="Home page"
         width="200"
       /><br/>
       <sub>Video Picker Screen</sub>
     </td>
     <td>
       <img
-        src="https://github.com/user-attachments/assets/b6d63480-57dd-48b6-8397-a14ede39f835"
-        alt="Video Trimmer Screen"
+        src="https://github.com/user-attachments/assets/b6d63480-57dd-48b6-8397-a14ede39f835/>"
+        alt="Upload Screen"
         width="200"
       /><br/>
       <sub>Video Trimmer Screen</sub>
     </td>
     <td>
       <img
-        src="https://github.com/user-attachments/assets/ede9d84a-4bb1-450f-bca1-a6b8dcc83a1a"
-        alt="Preview Screen"
+        src="https://github.com/user-attachments/assets/e8671c01-294d-4f7f-a382-20b810a47da8 />"
+        alt="Resume analyzer Screen"
         width="200"
       /><br/>
       <sub>Preview Screen</sub>
