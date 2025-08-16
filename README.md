@@ -19,10 +19,7 @@ A modern, production-ready template for building full-stack React applications u
 <table>
   <tr>
     <td align="center">
-      <img
-        src="https://github.com/user-attachments/assets/df16b139-3b9d-48e9-a500-36417bb93c42"
-        alt="Home Screen"
-        width="200" />
+      <img width="1903" height="922" alt="Screenshot 2025-08-16 152200" src="https://github.com/user-attachments/assets/df16b139-3b9d-48e9-a500-36417bb93c42" />
       <br />
       <sub>Home Screen</sub>
     </td>
